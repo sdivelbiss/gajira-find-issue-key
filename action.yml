@@ -13,7 +13,7 @@ inputs:
     default: commits
 outputs:
   issue:
-    description: Key of the found issue
+    description: Issue object, for key access issue.key
 runs:
   using: 'node12'
   main: './dist/index.js'
