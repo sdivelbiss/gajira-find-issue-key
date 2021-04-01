@@ -28,7 +28,7 @@ class Jira {
           expand: expand.join(','),
         },
       })
-
+      console.log("Result: ", JSON.stringify(res))
       return res
     } catch (error) {
       if (get(error, 'res.status') === 404) {

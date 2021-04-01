@@ -53,9 +53,9 @@ module.exports = class {
 
     for (const issueKey of match) {
       const issue = await this.Jira.getIssue(issueKey)
-
+      console.log("Issue Obj: ", JSON.stringify(issue))
       if (issue) {
-        return { issue }
+        return { issue: issue}
       }
     }
   }
